@@ -1,0 +1,1262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How It Works - ReTouch</title>
+    <meta name="description" content="Discover how ReTouch transforms plastic waste into accessible books through our innovative recycling process. Learn about our technology and environmental impact." />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fretouch6299back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.6"></script>
+</head>
+<body class="bg-background text-text-primary">
+    <!-- Navigation Header -->
+    <header class="sticky top-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border-light">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="homepage.html" class="flex items-center space-x-2">
+                        <svg class="w-8 h-8 text-primary" viewBox="0 0 32 32" fill="currentColor">
+                            <path d="M16 2L4 8v16l12 6 12-6V8L16 2zm0 4l8 4v12l-8 4-8-4V10l8-4z"/>
+                            <path d="M12 12h8v2h-8zm0 4h8v2h-8zm0 4h6v2h-6z"/>
+                        </svg>
+                        <span class="text-xl font-heading font-semibold text-primary">ReTouch</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="homepage.html" class="text-text-secondary hover:text-primary transition-colors px-3 py-2 rounded-md text-sm">Home</a>
+                        <a href="about_us.html" class="text-text-secondary hover:text-primary transition-colors px-3 py-2 rounded-md text-sm">About Us</a>
+                        <a href="how_it_works.html" class="text-primary font-medium px-3 py-2 rounded-md text-sm">How It Works</a>
+                        <a href="products.html" class="text-text-secondary hover:text-primary transition-colors px-3 py-2 rounded-md text-sm">Products</a>
+                        <a href="get_involved.html" class="text-text-secondary hover:text-primary transition-colors px-3 py-2 rounded-md text-sm">Get Involved</a>
+                    </div>
+                </div>
+
+                <!-- High Contrast Toggle & Mobile Menu -->
+                <div class="flex items-center space-x-4">
+                    <button id="contrastToggle" class="p-2 rounded-md text-text-secondary hover:text-primary transition-colors" aria-label="Toggle high contrast mode">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
+                        </svg>
+                    </button>
+                    
+                    <!-- Mobile menu button -->
+                    <button id="mobileMenuBtn" class="md:hidden p-2 rounded-md text-text-secondary hover:text-primary transition-colors" aria-label="Open mobile menu">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation Menu -->
+            <div id="mobileMenu" class="md:hidden hidden">
+                <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-surface rounded-lg mt-2">
+                    <a href="homepage.html" class="text-text-secondary hover:text-primary transition-colors block px-3 py-2 rounded-md text-base">Home</a>
+                    <a href="about_us.html" class="text-text-secondary hover:text-primary transition-colors block px-3 py-2 rounded-md text-base">About Us</a>
+                    <a href="how_it_works.html" class="text-primary font-medium block px-3 py-2 rounded-md text-base">How It Works</a>
+                    <a href="products.html" class="text-text-secondary hover:text-primary transition-colors block px-3 py-2 rounded-md text-base">Products</a>
+                    <a href="get_involved.html" class="text-text-secondary hover:text-primary transition-colors block px-3 py-2 rounded-md text-base">Get Involved</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative py-16 bg-gradient-earth overflow-hidden">
+        <!-- Animated Background Elements -->
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-1/4 left-1/4 w-16 h-16 bg-secondary rounded-lg transform rotate-12 animate-pulse"></div>
+            <div class="absolute top-1/3 right-1/4 w-12 h-12 bg-accent rounded-full animate-bounce"></div>
+            <div class="absolute bottom-1/4 left-1/3 w-20 h-20 bg-primary rounded-lg transform -rotate-12 animate-pulse"></div>
+        </div>
+
+        <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-heading font-bold text-primary mb-6 text-balance">
+                From Waste to Wonder
+            </h1>
+            <p class="text-lg sm:text-xl text-text-secondary mb-8 max-w-2xl mx-auto text-balance">
+                Discover the innovative process that transforms discarded plastic bottles into accessible, affordable books for everyone.
+            </p>
+            
+            <!-- Process Overview Icons -->
+            <div class="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-8 mb-8">
+                <div class="flex items-center space-x-2 p-3 bg-white/80 rounded-lg shadow-natural">
+                    <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"/>
+                    </svg>
+                    <span class="font-medium text-text-primary">Collect</span>
+                </div>
+                
+                <div class="hidden sm:block">
+                    <svg class="w-6 h-6 text-primary animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                    </svg>
+                </div>
+                
+                <div class="flex items-center space-x-2 p-3 bg-white/80 rounded-lg shadow-natural">
+                    <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+                    </svg>
+                    <span class="font-medium text-text-primary">Transform</span>
+                </div>
+                
+                <div class="hidden sm:block">
+                    <svg class="w-6 h-6 text-primary animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                    </svg>
+                </div>
+                
+                <div class="flex items-center space-x-2 p-3 bg-white/80 rounded-lg shadow-natural">
+                    <svg class="w-8 h-8 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                    </svg>
+                    <span class="font-medium text-text-primary">Create</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Process Flow -->
+    <section class="py-16 bg-background">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-heading font-bold text-primary mb-4">Our 6-Step Process</h2>
+                <p class="text-lg text-text-secondary max-w-2xl mx-auto">Each step is carefully designed to maximize environmental impact while ensuring the highest quality output</p>
+            </div>
+
+            <div class="space-y-8">
+                <!-- Step 1: Collection -->
+                <div class="process-card card p-6 cursor-pointer transition-all duration-300 hover:shadow-natural-lg" data-step="1">
+                    <div class="flex flex-col lg:flex-row items-start gap-6">
+                        <div class="flex-shrink-0">
+                            <div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center font-bold text-xl mb-4">1</div>
+                            <img src="https://images.pexels.com/photos/3735218/pexels-photo-3735218.jpeg?auto=compress&cs=tinysrgb&w=300&h=200&fit=crop" alt="Plastic waste collection" class="w-full lg:w-64 h-48 object-cover rounded-lg shadow-natural" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        </div>
+                        
+                        <div class="flex-1">
+                            <div class="flex items-center justify-between mb-4">
+                                <h3 class="text-2xl font-heading font-semibold text-primary">Plastic Collection</h3>
+                                <button class="expand-btn text-primary hover:text-primary-600 transition-colors">
+                                    <svg class="w-6 h-6 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            
+                            <p class="text-text-secondary mb-4">We partner with local communities, schools, and organizations to collect plastic waste, focusing on PET bottles and containers.</p>
+                            
+                            <div class="expanded-content hidden">
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6 p-4 bg-surface rounded-lg">
+                                    <div>
+                                        <h4 class="font-semibold text-primary mb-3">Collection Methods</h4>
+                                        <ul class="space-y-2 text-text-secondary">
+                                            <li class="flex items-center">
+                                                <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                                </svg>
+                                                Community drop-off points
+                                            </li>
+                                            <li class="flex items-center">
+                                                <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                                </svg>
+                                                School collection drives
+                                            </li>
+                                            <li class="flex items-center">
+                                                <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                                </svg>
+                                                Corporate partnerships
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-primary mb-3">Quality Standards</h4>
+                                        <ul class="space-y-2 text-text-secondary">
+                                            <li class="flex items-center">
+                                                <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                                </svg>
+                                                Clean, label-free bottles
+                                            </li>
+                                            <li class="flex items-center">
+                                                <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                                </svg>
+                                                PET plastic only
+                                            </li>
+                                            <li class="flex items-center">
+                                                <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                                </svg>
+                                                No contamination
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 2: Sorting & Cleaning -->
+                <div class="process-card card p-6 cursor-pointer transition-all duration-300 hover:shadow-natural-lg" data-step="2">
+                    <div class="flex flex-col lg:flex-row-reverse items-start gap-6">
+                        <div class="flex-shrink-0">
+                            <div class="w-16 h-16 bg-accent text-white rounded-full flex items-center justify-center font-bold text-xl mb-4">2</div>
+                            <img src="https://images.pixabay.com/photo/2016/11/29/05/45/astronomy-1867616_1280.jpg?auto=compress&cs=tinysrgb&w=300&h=200&fit=crop" alt="Plastic sorting process" class="w-full lg:w-64 h-48 object-cover rounded-lg shadow-natural" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        </div>
+                        
+                        <div class="flex-1">
+                            <div class="flex items-center justify-between mb-4">
+                                <h3 class="text-2xl font-heading font-semibold text-accent">Sorting & Cleaning</h3>
+                                <button class="expand-btn text-accent hover:text-accent-600 transition-colors">
+                                    <svg class="w-6 h-6 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            
+                            <p class="text-text-secondary mb-4">Collected plastic undergoes rigorous sorting by type and color, followed by thorough cleaning to remove all contaminants.</p>
+                            
+                            <div class="expanded-content hidden">
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6 p-4 bg-surface rounded-lg">
+                                    <div>
+                                        <h4 class="font-semibold text-accent mb-3">Sorting Process</h4>
+                                        <ul class="space-y-2 text-text-secondary">
+                                            <li class="flex items-center">
+                                                <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                                </svg>
+                                                Automated optical sorting
+                                            </li>
+                                            <li class="flex items-center">
+                                                <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                                </svg>
+                                                Color separation
+                                            </li>
+                                            <li class="flex items-center">
+                                                <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                                </svg>
+                                                Quality inspection
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-accent mb-3">Cleaning Methods</h4>
+                                        <ul class="space-y-2 text-text-secondary">
+                                            <li class="flex items-center">
+                                                <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                                </svg>
+                                                Hot water washing
+                                            </li>
+                                            <li class="flex items-center">
+                                                <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                                </svg>
+                                                Chemical treatment
+                                            </li>
+                                            <li class="flex items-center">
+                                                <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                                </svg>
+                                                Final rinse & dry
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 3: Shredding -->
+                <div class="process-card card p-6 cursor-pointer transition-all duration-300 hover:shadow-natural-lg" data-step="3">
+                    <div class="flex flex-col lg:flex-row items-start gap-6">
+                        <div class="flex-shrink-0">
+                            <div class="w-16 h-16 bg-secondary text-white rounded-full flex items-center justify-center font-bold text-xl mb-4">3</div>
+                            <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=compress&cs=tinysrgb&w=300&h=200&fit=crop" alt="Plastic shredding process" class="w-full lg:w-64 h-48 object-cover rounded-lg shadow-natural" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        </div>
+                        
+                        <div class="flex-1">
+                            <div class="flex items-center justify-between mb-4">
+                                <h3 class="text-2xl font-heading font-semibold text-secondary">Mechanical Shredding</h3>
+                                <button class="expand-btn text-secondary hover:text-secondary-600 transition-colors">
+                                    <svg class="w-6 h-6 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            
+                            <p class="text-text-secondary mb-4">Clean plastic bottles are mechanically shredded into small, uniform flakes that will serve as raw material for the next stage.</p>
+                            
+                            <div class="expanded-content hidden">
+                                <div class="mt-6 p-4 bg-surface rounded-lg">
+                                    <h4 class="font-semibold text-secondary mb-3">Shredding Specifications</h4>
+                                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                                        <div class="p-3 bg-white rounded-lg">
+                                            <div class="text-2xl font-bold text-secondary">2-5mm</div>
+                                            <div class="text-xs text-text-secondary">Flake Size</div>
+                                        </div>
+                                        <div class="p-3 bg-white rounded-lg">
+                                            <div class="text-2xl font-bold text-secondary">99.9%</div>
+                                            <div class="text-xs text-text-secondary">Purity Level</div>
+                                        </div>
+                                        <div class="p-3 bg-white rounded-lg">
+                                            <div class="text-2xl font-bold text-secondary">500kg</div>
+                                            <div class="text-xs text-text-secondary">Hourly Capacity</div>
+                                        </div>
+                                        <div class="p-3 bg-white rounded-lg">
+                                            <div class="text-2xl font-bold text-secondary">0.1%</div>
+                                            <div class="text-xs text-text-secondary">Waste Rate</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 4: Melting & Extrusion -->
+                <div class="process-card card p-6 cursor-pointer transition-all duration-300 hover:shadow-natural-lg" data-step="4">
+                    <div class="flex flex-col lg:flex-row-reverse items-start gap-6">
+                        <div class="flex-shrink-0">
+                            <div class="w-16 h-16 bg-warning text-white rounded-full flex items-center justify-center font-bold text-xl mb-4">4</div>
+                            <img src="https://images.pexels.com/photos/2280549/pexels-photo-2280549.jpeg?auto=compress&cs=tinysrgb&w=300&h=200&fit=crop" alt="Plastic melting and extrusion" class="w-full lg:w-64 h-48 object-cover rounded-lg shadow-natural" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        </div>
+                        
+                        <div class="flex-1">
+                            <div class="flex items-center justify-between mb-4">
+                                <h3 class="text-2xl font-heading font-semibold text-warning">Melting & Extrusion</h3>
+                                <button class="expand-btn text-warning hover:text-warning-600 transition-colors">
+                                    <svg class="w-6 h-6 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            
+                            <p class="text-text-secondary mb-4">Plastic flakes are heated to precise temperatures and extruded into thin sheets with the perfect texture for printing.</p>
+                            
+                            <div class="expanded-content hidden">
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6 p-4 bg-surface rounded-lg">
+                                    <div>
+                                        <h4 class="font-semibold text-warning mb-3">Temperature Control</h4>
+                                        <div class="space-y-3">
+                                            <div class="flex justify-between items-center p-2 bg-white rounded">
+                                                <span class="text-sm">Melting Point</span>
+                                                <span class="font-bold text-warning">260°C</span>
+                                            </div>
+                                            <div class="flex justify-between items-center p-2 bg-white rounded">
+                                                <span class="text-sm">Extrusion Temp</span>
+                                                <span class="font-bold text-warning">280°C</span>
+                                            </div>
+                                            <div class="flex justify-between items-center p-2 bg-white rounded">
+                                                <span class="text-sm">Cooling Rate</span>
+                                                <span class="font-bold text-warning">15°C/min</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-warning mb-3">Sheet Properties</h4>
+                                        <ul class="space-y-2 text-text-secondary">
+                                            <li class="flex items-center">
+                                                <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                                </svg>
+                                                0.1mm thickness
+                                            </li>
+                                            <li class="flex items-center">
+                                                <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                                </svg>
+                                                Smooth surface finish
+                                            </li>
+                                            <li class="flex items-center">
+                                                <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                                </svg>
+                                                Print-ready quality
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 5: Printing -->
+                <div class="process-card card p-6 cursor-pointer transition-all duration-300 hover:shadow-natural-lg" data-step="5">
+                    <div class="flex flex-col lg:flex-row items-start gap-6">
+                        <div class="flex-shrink-0">
+                            <div class="w-16 h-16 bg-success text-white rounded-full flex items-center justify-center font-bold text-xl mb-4">5</div>
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=compress&cs=tinysrgb&w=300&h=200&fit=crop" alt="Book printing process" class="w-full lg:w-64 h-48 object-cover rounded-lg shadow-natural" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        </div>
+                        
+                        <div class="flex-1">
+                            <div class="flex items-center justify-between mb-4">
+                                <h3 class="text-2xl font-heading font-semibold text-success">Digital Printing</h3>
+                                <button class="expand-btn text-success hover:text-success-600 transition-colors">
+                                    <svg class="w-6 h-6 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            
+                            <p class="text-text-secondary mb-4">Our recycled sheets are printed using eco-friendly inks and specialized equipment for both regular text and Braille formats.</p>
+                            
+                            <div class="expanded-content hidden">
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6 p-4 bg-surface rounded-lg">
+                                    <div>
+                                        <h4 class="font-semibold text-success mb-3">Printing Technologies</h4>
+                                        <ul class="space-y-2 text-text-secondary">
+                                            <li class="flex items-center">
+                                                <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                                </svg>
+                                                Digital offset printing
+                                            </li>
+                                            <li class="flex items-center">
+                                                <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                                </svg>
+                                                Braille embossing
+                                            </li>
+                                            <li class="flex items-center">
+                                                <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                                </svg>
+                                                Color illustration printing
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-success mb-3">Eco-Friendly Inks</h4>
+                                        <ul class="space-y-2 text-text-secondary">
+                                            <li class="flex items-center">
+                                                <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                                </svg>
+                                                Soy-based inks
+                                            </li>
+                                            <li class="flex items-center">
+                                                <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                                </svg>
+                                                VOC-free formulation
+                                            </li>
+                                            <li class="flex items-center">
+                                                <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                                </svg>
+                                                Biodegradable components
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 6: Binding & Distribution -->
+                <div class="process-card card p-6 cursor-pointer transition-all duration-300 hover:shadow-natural-lg" data-step="6">
+                    <div class="flex flex-col lg:flex-row-reverse items-start gap-6">
+                        <div class="flex-shrink-0">
+                            <div class="w-16 h-16 bg-error text-white rounded-full flex items-center justify-center font-bold text-xl mb-4">6</div>
+                            <img src="https://images.pixabay.com/photo/2015/11/19/21/10/glasses-1052010_1280.jpg?auto=compress&cs=tinysrgb&w=300&h=200&fit=crop" alt="Book binding and distribution" class="w-full lg:w-64 h-48 object-cover rounded-lg shadow-natural" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        </div>
+                        
+                        <div class="flex-1">
+                            <div class="flex items-center justify-between mb-4">
+                                <h3 class="text-2xl font-heading font-semibold text-error">Binding & Distribution</h3>
+                                <button class="expand-btn text-error hover:text-error-600 transition-colors">
+                                    <svg class="w-6 h-6 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            
+                            <p class="text-text-secondary mb-4">Printed pages are bound into durable books and distributed to schools, libraries, and individuals who need them most.</p>
+                            
+                            <div class="expanded-content hidden">
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6 p-4 bg-surface rounded-lg">
+                                    <div>
+                                        <h4 class="font-semibold text-error mb-3">Binding Options</h4>
+                                        <ul class="space-y-2 text-text-secondary">
+                                            <li class="flex items-center">
+                                                <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                                </svg>
+                                                Perfect binding
+                                            </li>
+                                            <li class="flex items-center">
+                                                <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                                </svg>
+                                                Spiral binding
+                                            </li>
+                                            <li class="flex items-center">
+                                                <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                                </svg>
+                                                Hardcover options
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-error mb-3">Distribution Channels</h4>
+                                        <ul class="space-y-2 text-text-secondary">
+                                            <li class="flex items-center">
+                                                <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                                </svg>
+                                                Schools & libraries
+                                            </li>
+                                            <li class="flex items-center">
+                                                <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                                </svg>
+                                                NGO partnerships
+                                            </li>
+                                            <li class="flex items-center">
+                                                <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                                </svg>
+                                                Direct delivery
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Material Technology Section -->
+    <section class="py-16 bg-surface">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl sm:text-4xl font-heading font-bold text-primary mb-4">Advanced Material Technology</h2>
+                <p class="text-lg text-text-secondary max-w-2xl mx-auto">Our proprietary technology ensures the highest quality recycled sheets with superior printing capabilities</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Technology Stack -->
+                <div class="card p-8">
+                    <h3 class="text-2xl font-heading font-semibold text-primary mb-6">Technology Stack</h3>
+                    
+                    <div class="space-y-4">
+                        <div class="tech-item p-4 bg-surface rounded-lg cursor-pointer transition-all duration-300 hover:shadow-natural" data-tech="sorting">
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
+                                        <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-text-primary">Optical Sorting System</h4>
+                                        <p class="text-sm text-text-secondary">AI-powered plastic identification</p>
+                                    </div>
+                                </div>
+                                <svg class="w-5 h-5 text-text-secondary transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </div>
+                            <div class="tech-details hidden mt-4 p-4 bg-white rounded-lg">
+                                <ul class="space-y-2 text-sm text-text-secondary">
+                                    <li>• Near-infrared spectroscopy for material identification</li>
+                                    <li>• 99.5% accuracy in plastic type classification</li>
+                                    <li>• Real-time quality control monitoring</li>
+                                    <li>• Automated rejection of contaminated materials</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="tech-item p-4 bg-surface rounded-lg cursor-pointer transition-all duration-300 hover:shadow-natural" data-tech="extrusion">
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-10 h-10 bg-accent/10 rounded-lg flex items-center justify-center">
+                                        <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-text-primary">Precision Extrusion</h4>
+                                        <p class="text-sm text-text-secondary">Temperature-controlled processing</p>
+                                    </div>
+                                </div>
+                                <svg class="w-5 h-5 text-text-secondary transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </div>
+                            <div class="tech-details hidden mt-4 p-4 bg-white rounded-lg">
+                                <ul class="space-y-2 text-sm text-text-secondary">
+                                    <li>• Multi-zone temperature control system</li>
+                                    <li>• Uniform sheet thickness (±0.01mm tolerance)</li>
+                                    <li>• Energy-efficient heating technology</li>
+                                    <li>• Continuous quality monitoring sensors</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="tech-item p-4 bg-surface rounded-lg cursor-pointer transition-all duration-300 hover:shadow-natural" data-tech="printing">
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-10 h-10 bg-secondary/10 rounded-lg flex items-center justify-center">
+                                        <svg class="w-5 h-5 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-text-primary">Digital Print System</h4>
+                                        <p class="text-sm text-text-secondary">High-resolution printing technology</p>
+                                    </div>
+                                </div>
+                                <svg class="w-5 h-5 text-text-secondary transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </div>
+                            <div class="tech-details hidden mt-4 p-4 bg-white rounded-lg">
+                                <ul class="space-y-2 text-sm text-text-secondary">
+                                    <li>• 1200 DPI print resolution capability</li>
+                                    <li>• Specialized Braille embossing system</li>
+                                    <li>• Eco-friendly ink compatibility</li>
+                                    <li>• Variable data printing support</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quality Metrics -->
+                <div class="card p-8">
+                    <h3 class="text-2xl font-heading font-semibold text-primary mb-6">Quality Metrics</h3>
+                    
+                    <div class="space-y-6">
+                        <div class="metric-item">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="font-medium text-text-primary">Sheet Uniformity</span>
+                                <span class="text-primary font-bold">98.5%</span>
+                            </div>
+                            <div class="w-full bg-border rounded-full h-2">
+                                <div class="bg-primary h-2 rounded-full" style="width: 98.5%"></div>
+                            </div>
+                        </div>
+
+                        <div class="metric-item">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="font-medium text-text-primary">Print Quality</span>
+                                <span class="text-accent font-bold">97.2%</span>
+                            </div>
+                            <div class="w-full bg-border rounded-full h-2">
+                                <div class="bg-accent h-2 rounded-full" style="width: 97.2%"></div>
+                            </div>
+                        </div>
+
+                        <div class="metric-item">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="font-medium text-text-primary">Durability Score</span>
+                                <span class="text-secondary font-bold">95.8%</span>
+                            </div>
+                            <div class="w-full bg-border rounded-full h-2">
+                                <div class="bg-secondary h-2 rounded-full" style="width: 95.8%"></div>
+                            </div>
+                        </div>
+
+                        <div class="metric-item">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="font-medium text-text-primary">Eco-Friendliness</span>
+                                <span class="text-success font-bold">99.1%</span>
+                            </div>
+                            <div class="w-full bg-border rounded-full h-2">
+                                <div class="bg-success h-2 rounded-full" style="width: 99.1%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Certifications -->
+                    <div class="mt-8 p-4 bg-surface rounded-lg">
+                        <h4 class="font-semibold text-primary mb-4">Certifications & Standards</h4>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="text-center p-3 bg-white rounded-lg">
+                                <div class="text-sm font-medium text-text-primary">ISO 14001</div>
+                                <div class="text-xs text-text-secondary">Environmental</div>
+                            </div>
+                            <div class="text-center p-3 bg-white rounded-lg">
+                                <div class="text-sm font-medium text-text-primary">FSC Certified</div>
+                                <div class="text-xs text-text-secondary">Sustainable</div>
+                            </div>
+                            <div class="text-center p-3 bg-white rounded-lg">
+                                <div class="text-sm font-medium text-text-primary">FDA Approved</div>
+                                <div class="text-xs text-text-secondary">Food Safe</div>
+                            </div>
+                            <div class="text-center p-3 bg-white rounded-lg">
+                                <div class="text-sm font-medium text-text-primary">BIS Standard</div>
+                                <div class="text-xs text-text-secondary">Quality</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature Comparison Table -->
+    <section class="py-16 bg-background">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl sm:text-4xl font-heading font-bold text-primary mb-4">ReTouch vs Traditional Books</h2>
+                <p class="text-lg text-text-secondary max-w-2xl mx-auto">See how our recycled books compare to traditional paper books across key metrics</p>
+            </div>
+
+            <!-- Desktop Table -->
+            <div class="hidden lg:block card overflow-hidden">
+                <table class="w-full">
+                    <thead class="bg-surface">
+                        <tr>
+                            <th class="px-6 py-4 text-left font-semibold text-text-primary">Feature</th>
+                            <th class="px-6 py-4 text-center font-semibold text-primary">ReTouch Books</th>
+                            <th class="px-6 py-4 text-center font-semibold text-text-secondary">Traditional Books</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-border-light">
+                        <tr class="hover:bg-surface/50 transition-colors">
+                            <td class="px-6 py-4 font-medium text-text-primary">Environmental Impact</td>
+                            <td class="px-6 py-4 text-center">
+                                <div class="flex items-center justify-center space-x-2">
+                                    <svg class="w-5 h-5 text-success" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span class="text-success font-medium">95% Less Impact</span>
+                                </div>
+                            </td>
+                            <td class="px-6 py-4 text-center">
+                                <div class="flex items-center justify-center space-x-2">
+                                    <svg class="w-5 h-5 text-error" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span class="text-error font-medium">High Impact</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="hover:bg-surface/50 transition-colors">
+                            <td class="px-6 py-4 font-medium text-text-primary">Cost per Book</td>
+                            <td class="px-6 py-4 text-center">
+                                <span class="text-primary font-bold">₹25-45</span>
+                            </td>
+                            <td class="px-6 py-4 text-center">
+                                <span class="text-text-secondary font-bold">₹80-150</span>
+                            </td>
+                        </tr>
+                        <tr class="hover:bg-surface/50 transition-colors">
+                            <td class="px-6 py-4 font-medium text-text-primary">Durability</td>
+                            <td class="px-6 py-4 text-center">
+                                <div class="flex items-center justify-center space-x-2">
+                                    <svg class="w-5 h-5 text-success" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span class="text-success font-medium">Water Resistant</span>
+                                </div>
+                            </td>
+                            <td class="px-6 py-4 text-center">
+                                <div class="flex items-center justify-center space-x-2">
+                                    <svg class="w-5 h-5 text-warning" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span class="text-warning font-medium">Water Sensitive</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="hover:bg-surface/50 transition-colors">
+                            <td class="px-6 py-4 font-medium text-text-primary">Braille Availability</td>
+                            <td class="px-6 py-4 text-center">
+                                <div class="flex items-center justify-center space-x-2">
+                                    <svg class="w-5 h-5 text-success" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span class="text-success font-medium">Always Available</span>
+                                </div>
+                            </td>
+                            <td class="px-6 py-4 text-center">
+                                <div class="flex items-center justify-center space-x-2">
+                                    <svg class="w-5 h-5 text-error" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span class="text-error font-medium">Limited</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="hover:bg-surface/50 transition-colors">
+                            <td class="px-6 py-4 font-medium text-text-primary">Production Time</td>
+                            <td class="px-6 py-4 text-center">
+                                <span class="text-primary font-bold">2-3 Days</span>
+                            </td>
+                            <td class="px-6 py-4 text-center">
+                                <span class="text-text-secondary font-bold">7-14 Days</span>
+                            </td>
+                        </tr>
+                        <tr class="hover:bg-surface/50 transition-colors">
+                            <td class="px-6 py-4 font-medium text-text-primary">Customization</td>
+                            <td class="px-6 py-4 text-center">
+                                <div class="flex items-center justify-center space-x-2">
+                                    <svg class="w-5 h-5 text-success" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span class="text-success font-medium">Fully Customizable</span>
+                                </div>
+                            </td>
+                            <td class="px-6 py-4 text-center">
+                                <div class="flex items-center justify-center space-x-2">
+                                    <svg class="w-5 h-5 text-warning" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span class="text-warning font-medium">Limited Options</span>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Mobile Cards -->
+            <div class="lg:hidden space-y-4">
+                <div class="card p-6">
+                    <h3 class="font-semibold text-text-primary mb-4">Environmental Impact</h3>
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-center">
+                            <span class="text-primary font-medium">ReTouch Books</span>
+                            <div class="flex items-center space-x-2">
+                                <svg class="w-4 h-4 text-success" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                <span class="text-success text-sm">95% Less Impact</span>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-text-secondary">Traditional Books</span>
+                            <div class="flex items-center space-x-2">
+                                <svg class="w-4 h-4 text-error" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                                </svg>
+                                <span class="text-error text-sm">High Impact</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card p-6">
+                    <h3 class="font-semibold text-text-primary mb-4">Cost per Book</h3>
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-center">
+                            <span class="text-primary font-medium">ReTouch Books</span>
+                            <span class="text-primary font-bold">₹25-45</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-text-secondary">Traditional Books</span>
+                            <span class="text-text-secondary font-bold">₹80-150</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card p-6">
+                    <h3 class="font-semibold text-text-primary mb-4">Braille Availability</h3>
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-center">
+                            <span class="text-primary font-medium">ReTouch Books</span>
+                            <div class="flex items-center space-x-2">
+                                <svg class="w-4 h-4 text-success" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                <span class="text-success text-sm">Always Available</span>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-text-secondary">Traditional Books</span>
+                            <div class="flex items-center space-x-2">
+                                <svg class="w-4 h-4 text-error" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                                </svg>
+                                <span class="text-error text-sm">Limited</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Environmental Impact Calculator -->
+    <section class="py-16 bg-surface">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl sm:text-4xl font-heading font-bold text-primary mb-4">Calculate Your Impact</h2>
+                <p class="text-lg text-text-secondary max-w-2xl mx-auto">See how many plastic bottles you can help recycle and the environmental impact you can make</p>
+            </div>
+
+            <div class="card p-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <!-- Calculator Input -->
+                    <div>
+                        <h3 class="text-xl font-heading font-semibold text-primary mb-6">Input Your Numbers</h3>
+                        
+                        <div class="space-y-6">
+                            <div>
+                                <label for="bookQuantity" class="block text-sm font-medium text-text-primary mb-2">Number of Books Needed</label>
+                                <input type="number" id="bookQuantity" class="input-field" placeholder="Enter number of books" min="1" max="10000" value="10" />
+                            </div>
+
+                            <div>
+                                <label for="bookType" class="block text-sm font-medium text-text-primary mb-2">Book Type</label>
+                                <select id="bookType" class="input-field">
+                                    <option value="textbook">Textbook (200 pages)</option>
+                                    <option value="novel">Novel (300 pages)</option>
+                                    <option value="children">Children's Book (50 pages)</option>
+                                    <option value="braille">Braille Book (400 pages)</option>
+                                </select>
+                            </div>
+
+                            <button id="calculateImpact" class="btn-primary w-full">
+                                Calculate Environmental Impact
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Results Display -->
+                    <div>
+                        <h3 class="text-xl font-heading font-semibold text-primary mb-6">Your Environmental Impact</h3>
+                        
+                        <div id="calculatorResults" class="space-y-4">
+                            <div class="p-4 bg-primary/5 rounded-lg">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center space-x-3">
+                                        <div class="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
+                                            <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"/>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <div class="font-semibold text-text-primary">Plastic Bottles Recycled</div>
+                                            <div class="text-sm text-text-secondary">Diverted from landfills</div>
+                                        </div>
+                                    </div>
+                                    <div class="text-2xl font-bold text-primary" id="bottlesRecycled">40</div>
+                                </div>
+                            </div>
+
+                            <div class="p-4 bg-accent/5 rounded-lg">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center space-x-3">
+                                        <div class="w-10 h-10 bg-accent/10 rounded-lg flex items-center justify-center">
+                                            <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064"/>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <div class="font-semibold text-text-primary">CO₂ Emissions Reduced</div>
+                                            <div class="text-sm text-text-secondary">Compared to traditional books</div>
+                                        </div>
+                                    </div>
+                                    <div class="text-2xl font-bold text-accent" id="co2Reduced">12.5kg</div>
+                                </div>
+                            </div>
+
+                            <div class="p-4 bg-success/5 rounded-lg">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center space-x-3">
+                                        <div class="w-10 h-10 bg-success/10 rounded-lg flex items-center justify-center">
+                                            <svg class="w-5 h-5 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"/>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <div class="font-semibold text-text-primary">Cost Savings</div>
+                                            <div class="text-sm text-text-secondary">Compared to traditional books</div>
+                                        </div>
+                                    </div>
+                                    <div class="text-2xl font-bold text-success" id="costSavings">₹650</div>
+                                </div>
+                            </div>
+
+                            <div class="p-4 bg-secondary/5 rounded-lg">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center space-x-3">
+                                        <div class="w-10 h-10 bg-secondary/10 rounded-lg flex items-center justify-center">
+                                            <svg class="w-5 h-5 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <div class="font-semibold text-text-primary">Total Book Pages</div>
+                                            <div class="text-sm text-text-secondary">Printed on recycled sheets</div>
+                                        </div>
+                                    </div>
+                                    <div class="text-2xl font-bold text-secondary" id="totalPages">2,000</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 p-4 bg-gradient-earth rounded-lg">
+                            <div class="text-center">
+                                <div class="text-sm text-text-secondary mb-2">Equivalent to planting</div>
+                                <div class="text-3xl font-bold text-primary" id="treesEquivalent">2.1</div>
+                                <div class="text-sm text-text-secondary">trees in terms of CO₂ absorption</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-16 bg-primary text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl sm:text-4xl font-heading font-bold mb-4">Ready to Transform Waste into Wonder?</h2>
+            <p class="text-lg mb-8 opacity-90">Join our mission to create a sustainable future through innovative recycling and accessible education</p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="get_involved.html" class="bg-white text-primary px-8 py-3 rounded-lg font-medium hover:bg-gray-100 transition-colors w-full sm:w-auto text-center">
+                    Support Our Mission
+                </a>
+                <a href="products.html" class="border-2 border-white text-white px-8 py-3 rounded-lg font-medium hover:bg-white hover:text-primary transition-colors w-full sm:w-auto text-center">
+                    View Our Books
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-text-primary text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Logo and Description -->
+                <div class="md:col-span-2">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <svg class="w-8 h-8 text-primary" viewBox="0 0 32 32" fill="currentColor">
+                            <path d="M16 2L4 8v16l12 6 12-6V8L16 2zm0 4l8 4v12l-8 4-8-4V10l8-4z"/>
+                            <path d="M12 12h8v2h-8zm0 4h8v2h-8zm0 4h6v2h-6z"/>
+                        </svg>
+                        <span class="text-xl font-heading font-semibold">ReTouch</span>
+                    </div>
+                    <p class="text-gray-300 mb-4 max-w-md">Transforming plastic waste into accessible books, creating a sustainable future one page at a time.</p>
+                    
+                    <!-- Social Links -->
+                    <div class="flex space-x-4">
+                        <a href="javascript:void(0)" class="text-gray-300 hover:text-primary transition-colors" aria-label="Facebook">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-gray-300 hover:text-primary transition-colors" aria-label="Twitter">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-gray-300 hover:text-primary transition-colors" aria-label="LinkedIn">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-lg font-heading font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="about_us.html" class="text-gray-300 hover:text-primary transition-colors">About Us</a></li>
+                        <li><a href="how_it_works.html" class="text-gray-300 hover:text-primary transition-colors">How It Works</a></li>
+                        <li><a href="products.html" class="text-gray-300 hover:text-primary transition-colors">Products</a></li>
+                        <li><a href="get_involved.html" class="text-gray-300 hover:text-primary transition-colors">Get Involved</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-lg font-heading font-semibold mb-4">Contact</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>contact@retouch.org</li>
+                        <li>+91 98765 43210</li>
+                        <li>Mumbai, Maharashtra</li>
+                        <li>India</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300">
+                <p>&copy; 2025 ReTouch. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // High contrast toggle
+        const contrastToggle = document.getElementById('contrastToggle');
+        contrastToggle.addEventListener('click', () => {
+            document.body.classList.toggle('high-contrast');
+        });
+
+        // Process card expansion
+        document.querySelectorAll('.process-card').forEach(card => {
+            const expandBtn = card.querySelector('.expand-btn');
+            const expandedContent = card.querySelector('.expanded-content');
+            const expandIcon = expandBtn.querySelector('svg');
+
+            expandBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                
+                // Close other expanded cards
+                document.querySelectorAll('.process-card').forEach(otherCard => {
+                    if (otherCard !== card) {
+                        const otherContent = otherCard.querySelector('.expanded-content');
+                        const otherIcon = otherCard.querySelector('.expand-btn svg');
+                        otherContent.classList.add('hidden');
+                        otherIcon.style.transform = 'rotate(0deg)';
+                    }
+                });
+
+                // Toggle current card
+                expandedContent.classList.toggle('hidden');
+                const isExpanded = !expandedContent.classList.contains('hidden');
+                expandIcon.style.transform = isExpanded ? 'rotate(180deg)' : 'rotate(0deg)';
+            });
+
+            // Also allow clicking the card itself to expand
+            card.addEventListener('click', () => {
+                expandBtn.click();
+            });
+        });
+
+        // Technology stack expansion
+        document.querySelectorAll('.tech-item').forEach(item => {
+            const details = item.querySelector('.tech-details');
+            const icon = item.querySelector('svg:last-child');
+
+            item.addEventListener('click', () => {
+                // Close other tech items
+                document.querySelectorAll('.tech-item').forEach(otherItem => {
+                    if (otherItem !== item) {
+                        const otherDetails = otherItem.querySelector('.tech-details');
+                        const otherIcon = otherItem.querySelector('svg:last-child');
+                        otherDetails.classList.add('hidden');
+                        otherIcon.style.transform = 'rotate(0deg)';
+                    }
+                });
+
+                // Toggle current item
+                details.classList.toggle('hidden');
+                const isExpanded = !details.classList.contains('hidden');
+                icon.style.transform = isExpanded ? 'rotate(180deg)' : 'rotate(0deg)';
+            });
+        });
+
+        // Environmental Impact Calculator
+        const bookQuantityInput = document.getElementById('bookQuantity');
+        const bookTypeSelect = document.getElementById('bookType');
+        const calculateBtn = document.getElementById('calculateImpact');
+
+        const bookData = {
+            textbook: { pages: 200, bottlesPerBook: 4, co2PerBook: 1.2, costSaving: 65 },
+            novel: { pages: 300, bottlesPerBook: 6, co2PerBook: 1.8, costSaving: 85 },
+            children: { pages: 50, bottlesPerBook: 1, co2PerBook: 0.3, costSaving: 25 },
+            braille: { pages: 400, bottlesPerBook: 8, co2PerBook: 2.4, costSaving: 120 }
+        };
+
+        function calculateImpact() {
+            const quantity = parseInt(bookQuantityInput.value) || 0;
+            const bookType = bookTypeSelect.value;
+            const data = bookData[bookType];
+
+            if (quantity > 0 && data) {
+                const bottlesRecycled = quantity * data.bottlesPerBook;
+                const co2Reduced = (quantity * data.co2PerBook).toFixed(1);
+                const costSavings = quantity * data.costSaving;
+                const totalPages = quantity * data.pages;
+                const treesEquivalent = (co2Reduced / 6).toFixed(1); // Approximate CO2 absorption per tree
+
+                document.getElementById('bottlesRecycled').textContent = bottlesRecycled.toLocaleString('en-IN');
+                document.getElementById('co2Reduced').textContent = co2Reduced + 'kg';
+                document.getElementById('costSavings').textContent = '₹' + costSavings.toLocaleString('en-IN');
+                document.getElementById('totalPages').textContent = totalPages.toLocaleString('en-IN');
+                document.getElementById('treesEquivalent').textContent = treesEquivalent;
+
+                // Animate the results
+                document.getElementById('calculatorResults').style.opacity = '0.5';
+                setTimeout(() => {
+                    document.getElementById('calculatorResults').style.opacity = '1';
+                }, 200);
+            }
+        }
+
+        calculateBtn.addEventListener('click', calculateImpact);
+        bookQuantityInput.addEventListener('input', calculateImpact);
+        bookTypeSelect.addEventListener('change', calculateImpact);
+
+        // Initial calculation
+        calculateImpact();
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Observe fade-in elements
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Progressive enhancement for reduced motion
+        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+            document.querySelectorAll('.animate-pulse, .animate-bounce').forEach(el => {
+                el.style.animation = 'none';
+            });
+        }
+    </script>
+</body>
+</html>
